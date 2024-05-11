@@ -23,9 +23,9 @@ func (e Expectation) WithPriority(priority int32) Expectation {
 }
 
 type Response struct {
-	Body       map[string]interface{} `json:"body,omitempty"`
-	Headers    map[string][]string    `json:"headers,omitempty"`
-	StatusCode int32                  `json:"statusCode,omitempty"`
+	Body       interface{}         `json:"body,omitempty"`
+	Headers    map[string][]string `json:"headers,omitempty"`
+	StatusCode int32               `json:"statusCode,omitempty"`
 }
 
 func NewResponseOK() *Response {
