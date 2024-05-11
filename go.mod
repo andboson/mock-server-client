@@ -1,4 +1,4 @@
-module github.com/BraspagDevelopers/mock-server-client
+module github.com/andboson/mock-server-client
 
 go 1.14
 
